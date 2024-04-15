@@ -1,0 +1,83 @@
+/* mystyle.css */
+
+spawn {
+  color:rgb(170, 72, 255);
+  text-decoration-line:underline;
+}
+
+p {text-align:justify;}
+
+a {
+  color:rgb(32, 18, 18);
+text-decoration-line:none;
+font-size:20px;
+text-align:center;
+}
+
+.saw {color:rgb(215, 169, 255);}
+
+#active {color:rgb(170, 72, 255);}
+
+h1 {
+  font-size: 45px;
+  text-align: center;
+  border-bottom: 1px solid rgb(170, 72, 255);
+  margin: 0px;
+  padding: 20px;
+}
+
+#grid ol {
+  border-right: 1px solid rgb(170, 72, 255);
+  width: 100px;
+  margin: 0px;
+  padding: 20px;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+
+/* 모니터 해상도 */
+@media(min-width: 1024px){
+  body {
+    background-color: rgb(252, 240, 255);
+    margin: 0px;
+    font-family: fantasy;
+  }
+}
+
+
+/* 태블릿 해상도 */
+@media(max-width: 1023px){
+  body {
+    background-color:rgba(255, 147, 192, 0.416)
+  }
+  #grid {
+    display: block;
+    grid-template-columns: 150px 1fr;
+  }
+  #grid ol {
+    border-right: none;
+  }
+  h1 {
+    border-bottom: none;
+  }
+}
+
+/* 모바일 해상도 */
+@media(max-width: 767px){
+  body {
+    background-color:rgba(131, 247, 245, 0.379)
+  }
+  #grid {
+    display: block;
+    grid-template-columns: 150px 1fr;
+  }
+  #grid ol {
+    border-right: none;
+  }
+  h1 {
+    border-bottom: none;
+  }
+}
